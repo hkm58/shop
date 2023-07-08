@@ -1,0 +1,10 @@
+ // Sample code to add items to the cart dynamically
+    var cartItems = ['Item 1', 'Item 2', 'Item 3']; // Sample cart items
+
+    var cartContent = document.querySelector('.cart-dropdown-content');
+
+    cartItems.forEach(function(item) {
+      var cartItem = document.createElement('div');
+      cartItem.textContent = item;
+      cartContent.appendChild(cartItem);
+    });
